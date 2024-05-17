@@ -12,6 +12,7 @@ export class SerieListComponent implements OnInit {
   constructor() { }
 
   series: Array<Serie> = [];
+
   getSerieList(): Array<Serie> {
     return dataSeries;
   }
@@ -19,6 +20,7 @@ export class SerieListComponent implements OnInit {
   AverageSeasons: number = 0;
   
   calcularPromedioTemporadas(): number {
+    
     if (this.series.length === 0) {
       return 0;
     }
